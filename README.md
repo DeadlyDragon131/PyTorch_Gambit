@@ -31,3 +31,17 @@ The working of PyTorch_Gambit can be summarized in three main steps:
    - Once trained, the engine can take a board position as input and output move probabilities.  
    - The move with the highest probability (or a top-N choice) is selected.  
    - Unlike traditional rule-based engines, PyTorch_Gambit plays by imitating strategies it has learned.  
+## Performance and Conclusion
+
+### Performance
+The current model trained on the Lichess database plays at an estimated level of around **~1300 Elo** in the opening and middlegame.  
+It shows good accuracy in imitating strong player moves but struggles in deeper tactical positions and longer games.  
+
+### Conclusion
+PyTorch_Gambit demonstrates that a supervised CNN trained on millions of expert moves can learn to play chess in a **human-like style** without any rule-based programming.  
+While not competitive with top engines, it proves that move prediction from data alone can reach a strong club-level strength.  
+
+### Possible Improvements
+- Add a lightweight **search mechanism** (1–2 ply lookahead) to reduce tactical mistakes.  
+- Train on **larger and higher-quality datasets** to improve accuracy.  
+- Integrate a simple **blunder detection filter** to avoid major mistakes.  
