@@ -35,7 +35,7 @@ The working of PyTorch_Gambit can be summarized in three main steps:
 ## Performance and Conclusion
 
 ### Performance
-The model currently plays at an estimated **~1500 Elo** level in the opening and middlegame, but its strength drops in deeper tactical positions due to lack of search.  
+The model currently plays at an estimated **~1200 Elo** level in the opening and middlegame, but its strength drops in deeper tactical positions due to lack of search.  
 
 ### Conclusion
 PyTorch_Gambit shows that a supervised CNN can learn human-like chess strategies directly from grandmaster games, without explicit rules.  
@@ -44,3 +44,4 @@ PyTorch_Gambit shows that a supervised CNN can learn human-like chess strategies
 - Add a lightweight **search** (1–2 ply) to avoid tactical blunders.  
 - Train on **larger datasets** for better coverage of rare positions.  
 - Fine-tune with **reinforcement learning or self-play** to strengthen beyond imitation.  
+
